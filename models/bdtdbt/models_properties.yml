@@ -1,0 +1,11 @@
+models:
+  - name: dbt_emp
+    config:
+      materialized: view
+  - name: emp_10_details
+    config:
+      materialized: view
+  - name: emp_20
+    config:
+     materialized: view
+      
