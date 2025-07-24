@@ -8,4 +8,11 @@ models:
   - name: emp_20
     config:
      materialized: view
+sources:
+  - name: raw
+    database: dbt_practice
+    schema: RAW
+    tables: 
+      - name: EMP
+      - name: DEPT
       
