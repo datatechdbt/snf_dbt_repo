@@ -1,0 +1,7 @@
+seeds:
+  - name: "country_add_codes"
+    config:
+      quote_columns: true
+      column_types: {sno: number}
+      delimiter: "|"
+      alias: "dim_country_codes"
