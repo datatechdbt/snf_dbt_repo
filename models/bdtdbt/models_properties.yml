@@ -15,4 +15,12 @@ sources:
     tables: 
       - name: EMP
       - name: DEPT
+      - name: EMPLOYEE
+      - name: orders
+      - name: customers
+  - name: STG
+    schema: DBT_SCHEMA
+    tables:
+      - name: emp_stg
+
       
