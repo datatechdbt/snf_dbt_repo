@@ -4,10 +4,11 @@
 		database='dbt_practice',
 		schema='dwh',
 		alias='emp_scd_type1',
-        unique_key='id'
+        unique_key='id',
+        on_schema_change='sync_all_columns'
     )
 }}
-select * from {{source('STG','emp_stg')}}
+select e.*,current_timestamp as etl_insert_dt from {{source('STG','emp_stg')}} e
 
 {% if is_incremental() %}
 where
